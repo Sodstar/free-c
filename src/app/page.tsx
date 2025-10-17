@@ -365,6 +365,23 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="border-t border-slate-800 bg-slate-950/80 backdrop-blur-sm">
+        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <p className="text-slate-300">Бүх нийтийн боловсролд зориулав</p>
+            <a
+              href="https://nhs.edu.mn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 transition-colors underline decoration-purple-400/50 hover:decoration-purple-300/50"
+            >
+              nhs.edu.mn
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
