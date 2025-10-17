@@ -238,7 +238,7 @@ export default function Home() {
               </div>
             </div>
             <div className="text-right">
-              <p className="text-2xl font-bold text-cyan-400">
+              <p className="text-2xl font-bold text-purple-400">
                 {VIDEOS.length}
               </p>
               <p className="text-sm text-slate-400">Хичээлүүд</p>
@@ -269,7 +269,7 @@ export default function Home() {
               <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-6 backdrop-blur">
                 <div className="mb-4 flex items-start justify-between">
                   <div>
-                    <div className="mb-2 inline-block rounded bg-cyan-500/20 px-3 py-1 text-xs font-semibold text-cyan-400">
+                    <div className="mb-2 inline-block rounded bg-purple-500/20 px-3 py-1 text-xs font-semibold text-purple-400">
                       {selectedVideo.chapter}
                     </div>
                     <h2 className="mt-3 text-2xl font-bold text-white">
@@ -304,7 +304,7 @@ export default function Home() {
                 onClick={() => setSelectedChapter(null)}
                 className={`w-full rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
                   !selectedChapter
-                    ? "bg-cyan-500 text-white"
+                    ? "bg-purple-500 text-white"
                     : "bg-slate-800 text-slate-300 hover:bg-slate-700"
                 }`}
               >
@@ -316,7 +316,7 @@ export default function Home() {
                   onClick={() => setSelectedChapter(chapter)}
                   className={`w-full rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
                     selectedChapter === chapter
-                      ? "bg-cyan-500 text-white"
+                      ? "bg-purple-500 text-white"
                       : "bg-slate-800 text-slate-300 hover:bg-slate-700"
                   }`}
                 >
@@ -337,7 +337,7 @@ export default function Home() {
                     onClick={() => setSelectedVideo(video)}
                     className={`w-full rounded-lg border px-4 py-3 text-left transition-all ${
                       selectedVideo.id === video.id
-                        ? "border-cyan-500 bg-cyan-500/10 shadow-lg shadow-cyan-500/20"
+                        ? "border-purple-500 bg-purple-500/10 shadow-lg shadow-purple-500/20"
                         : "border-slate-800 bg-slate-900/50 hover:border-slate-700 hover:bg-slate-800/50"
                     }`}
                   >
@@ -345,7 +345,7 @@ export default function Home() {
                       <Play
                         className={`mt-0.5 h-4 w-4 flex-shrink-0 ${
                           selectedVideo.id === video.id
-                            ? "text-cyan-400"
+                            ? "text-purple-400"
                             : "text-slate-500"
                         }`}
                       />
